@@ -29,8 +29,8 @@ function love.update(dt)
     end
 
     for i,z in ipairs(zombies) do
-        z.x = z.x + math.cos(zombiePlayerAngle(z))
-        z.y = z.y + math.sin(zombiePlayerAngle(z))
+        z.x = z.x + math.cos(zombiePlayerAngle(z)) * z.speed
+        z.y = z.y + math.sin(zombiePlayerAngle(z)) * z.speed
 
 end
 
