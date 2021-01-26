@@ -12,7 +12,6 @@ function love.load()
 
     zombies = {}
 
-
 end
 
 function love.update(dt)
@@ -49,6 +48,10 @@ end
 
 function playerMouseAngle()
     return math.atan2(player.y - love.mouse.getY(), player.x - love.mouse.getX() ) + math.pi
+end
+
+function zombiePlayerAngle(enemy)
+    return math.atan2(player.y - enemy.y, player.x - enemy.x) + math.pi
 end
 
 function spawnZombie()
