@@ -36,7 +36,7 @@ function love.draw()
     love.graphics.draw(sprites.player, player.x, player.y, playerMouseAngle(), nil, nil, sprites.player:getWidth()/2, sprites.player:getHeight()/2)
 
     for i, z in ipairs (zombies) do
-        love.graphics.draw(sprites.zombie, z.x, z.y, zombiePlayerAngle(z))
+        love.graphics.draw(sprites.zombie, z.x, z.y, zombiePlayerAngle(z), nil, nil, sprites.zombie:getWidth()/2, sprites.zombie:getHeight()/2)
     end
 end    
 
